@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+<div class="h-screen text-2xl text-center text-white bg-blue-500 flex flex-col justify-center p-52 gap-10">
+  <h1 class="text-5xl font-bold">
+    Welcome To Exam Portal
+  </h1>
+  <p class="">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam debitis, reprehenderit eius a dignissimos magnam earum unde maiores voluptate?
+  </p>
+    <div class=" ">
+         <select #one class=" text-center text-black px-3 m-1 p-2 rounded">
+            <option [value]="0" selected>--Exam Hours--</option>
+            <ng-container *ngFor="let n of numSequence(10);let i =index">
+                <option [value]="i">{{i}}</option>
+
+            </ng-container>
+        </select>
+        <select #two  class=" text-center text-black px-3 m-1 p-2 rounded">
+            <option [value]="0" selected>--Minute--</option>
+
+            <ng-container *ngFor="let n of numSequence(59);let i =index">
+                <option [value]="i">{{i}}</option>
+
+            </ng-container>
+        </select>
+        <select #three  class=" text-center text-black px-3 m-1 p-2 rounded">
+            <option [value]="0" selected>--second--</option>
+
+            <ng-container *ngFor="let n of numSequence(59);let i =index">
+                <option [value]="i">{{i}}</option>
+
+            </ng-container>
+        </select>
+
+    </div>
+    <div>
+
+        <button (click)="navigate(one.value,two.value,three.value)" class="shadow-xl p-3 bg-green-700 text-white text-xl  rounded-xl">Start Exam</button>
+    </div>
+</div>

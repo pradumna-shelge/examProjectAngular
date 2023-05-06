@@ -1,0 +1,77 @@
+<nav class="flex justify-between p-3 shadow-lg text-lg font-semibold">
+    <div>
+        <button (click)="navigate('./home')">Home</button>
+    </div>
+    <div>
+        <button (click)="navigate('./ThankPage')" class="bg-red-600 p-2 rounded px-4 text-white">End Exam</button>
+    </div>
+</nav>
+
+<div class="m-5 flex justify-end text-center  ">
+    <p class="text-xl">
+        Remaining time
+        <br>
+       <span class="text-5xl" [ngStyle]="{'color': emergy()}">{{hour}}:{{min}}:{{sec}}</span> 
+    </p>
+</div>
+
+<div class="flex flex-col gap-5">
+    <div>
+        <label class="font-bold text-xl" for="">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
+        <ul>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <label class="font-bold text-xl" for="">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
+        <ul>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <label class="font-bold text-xl" for="">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
+        <ul>
+            <li>
+                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="flex justify-end p-3  text-lg font-semibold">
+    
+    <div>
+        <button (click)="navigate('./ThankPage')" class="bg-green-600 p-2 rounded px-4 text-white">Submit Exam</button>
+    </div>
+</div>
