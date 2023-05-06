@@ -6,6 +6,7 @@ import { TIME } from '../Exam/time';
 })
 export class TimepaseService {
 time={} as TIME;
+result = 0;
 private flag= false;
   constructor() { 
    

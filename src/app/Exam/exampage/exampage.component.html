@@ -15,58 +15,31 @@
     </p>
 </div>
 
-<div class="flex flex-col gap-5">
+<div class="flex flex-col gap-5" *ngIf="questions != null" >
+<ng-container *ngFor="let item of questions;let i=index">
+
     <div>
-        <label class="font-bold text-xl" for="">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
-        <ul>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-        </ul>
+        <label for="">{{item.Id}}.{{item.Question}}</label>
+        <div  >
+            <input   (click)="answerCheck(item.Id,item.Mcq.A)"  type="radio" [name]="item.Id" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+             {{item.Mcq.A}}
+        </div>
+        <div >
+            <input  (click)="answerCheck(item.Id,item.Mcq.B)"   type="radio" [name]="item.Id" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+             {{item.Mcq.B}}
+        </div>
+        <div >
+            <input  (click)="answerCheck(item.Id,item.Mcq.C)"   type="radio" [name]="item.Id" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+             {{item.Mcq.C}}
+        </div>
+        <div >
+            <input  (click)="answerCheck(item.Id,item.Mcq.D)"  type="radio" [name]="item.Id" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+             {{item.Mcq.D}}
+        </div>
+
     </div>
-    <div>
-        <label class="font-bold text-xl" for="">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
-        <ul>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="radio" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-        </ul>
-    </div>
-    <div>
-        <label class="font-bold text-xl" for="">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorem?</label>
-        <ul>
-            <li>
-                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-            <li>
-                <input type="checkbox" name="q1" > Lorem ipsum dolor sit amet.
-            </li>
-        </ul>
-    </div>
+</ng-container>
+   
 </div>
 
 <div class="flex justify-end p-3  text-lg font-semibold">

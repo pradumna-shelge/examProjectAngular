@@ -1,0 +1,57 @@
+[
+    {
+        "Id":1,
+        "Question":"Which of the following statement is correct for AngularJS",
+        "Mcq":{
+            "A":"AngularJS is an HTML framework",
+            "B":"AngularJS is a Java framework",
+            "C": "AngularJS is a JavaScript framework",
+            "D":"AngularJS is a SQL framework"
+        },
+        "Ans":"AngularJS is a JavaScript framework"
+        
+
+
+    },
+    {
+        "Id":2,
+        "Question":"On which of the Architectural pattern AngularJS is based",
+        "Mcq":{
+            "A":"Observer Pattern",
+            "B":"Decorator pattern",
+            "C": "MVC Architecture pattern",
+            "D":"MVVM Architectural pattern"
+        },
+        "Ans":"MVVM Architectural pattern"
+        
+
+
+    },
+    {
+        "Id":3,
+        "Question":"AngularJS is perfect for",
+        "Mcq":{
+            "A":"SPAs",
+            "B":"MPAs",
+            "C": "DPAs",
+            "D":"CPAs"
+        },
+        "Ans":"SPAs"
+        
+
+    },
+    {    "Id":4,
+    "Question":"Which of the following statement is correct for AngularJS",
+    "Mcq":{
+        "A":"AngularJS is an HTML framework",
+        "B":"AngularJS is a Java framework",
+        "C": "AngularJS is a JavaScript framework",
+        "D":"AngularJS is a SQL framework"
+    },
+    "Ans":"AngularJS is a JavaScript framework"
+    
+
+
+    }
+
+]
